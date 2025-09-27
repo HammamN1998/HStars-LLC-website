@@ -1,0 +1,60 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Features 2 Section
+--------------------------------------------------------------*/
+.features-2 {
+  .features-item {
+    +.features-item {
+      margin-top: 60px;
+    }
+
+    .content {
+      background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+      color: color-mix(in srgb, var(--default-color), transparent 40%);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
+    .more-btn {
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 6px 30px;
+      border-radius: 6px;
+
+      &:hover {
+        background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+      i {
+        font-size: 20px;
+        margin-right: 10px;
+        color: var(--accent-color);
+      }
+    }
+
+    img {
+      border-radius: 15px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# About 2 Section
+--------------------------------------------------------------*/
+.about-2 {
+  .about-content {
+    h3 {
+      font-weight: 700;
+      font-size: 26px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 35px;
+      }
+
+      li:first-child {
+        margin-top: 35px;
+      }
+
+      i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 64px;
+        height: 64px;
+        font-size: 32px;
+        color: #fff;
+        background: var(--accent-color);
+        margin-right: 15px;
+        line-height: 0;
+        border-radius: 5px;
+      }
+
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

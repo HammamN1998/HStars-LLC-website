@@ -1,0 +1,56 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .clients-slider {
+    overflow: hidden;
+    background-color: var(--surface-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
+
+  .swiper-wrapper {
+    height: auto !important;
+    align-items: stretch;
+    transition-timing-function: linear;
+  }
+
+  .swiper-slide {
+    height: auto;
+    border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 40px;
+    height: 100%;
+
+    img {
+      max-width: 90%;
+      transition: 0.3s;
+      opacity: 0.5;
+      filter: grayscale(100);
+
+      &:hover {
+        filter: none;
+        opacity: 1;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .client-logo {
+      padding: 20px;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services {
+  .service-item {
+    position: relative;
+    padding: 60px 30px 80px;
+    background-color: var(--surface-color);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px color-mix(in srgb, var(--default-color), transparent 90%);
+    transition: all 0.3s ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background-color: var(--accent-color);
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .service-icon {
+      width: 72px;
+      height: 72px;
+      background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+      color: var(--accent-color);
+      font-size: 34px;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+
+      i {
+        line-height: 1;
+      }
+    }
+
+    h3 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 15px;
+
+      a {
+        color: var(--heading-color);
+        transition: color 0.3s ease;
+
+        span {
+          display: inline-block;
+          color: var(--accent-color);
+        }
+
+        &:hover {
+          color: var(--accent-color);
+        }
+      }
+    }
+
+    p {
+      color: var(--default-color);
+      margin-bottom: 0;
+      transition: color 0.3s ease;
+    }
+
+    .card-action {
+      position: absolute;
+      right: 24px;
+      bottom: 24px;
+      width: 56px;
+      height: 56px;
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      font-size: 22px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+
+      i {
+        transition: transform 0.3s ease;
+      }
+
+      &:hover i {
+        transform: rotate(45deg);
+      }
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 14px 30px color-mix(in srgb, var(--default-color), transparent 85%);
+
+      .service-icon {
+        transform: scale(1.1);
+      }
+
+      p {
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+      }
+
+      .card-action {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 50px 25px 70px;
+
+      h3 {
+        font-size: 22px;
+      }
+
+      .service-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 70px 0 50px;
+  }
+
+  .swiper-wrapper {
+    height: auto !important;
+  }
+}

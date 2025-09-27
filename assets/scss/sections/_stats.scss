@@ -1,0 +1,156 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Stats Section
+--------------------------------------------------------------*/
+.stats {
+  .stats-hero {
+    margin-bottom: 2.5rem;
+
+    .headline {
+      color: var(--heading-color);
+      font-family: var(--heading-font);
+      font-size: 2.25rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .lead {
+      color: var(--default-color);
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .stats-rating {
+      background: var(--surface-color);
+      border-radius: 5px;
+      box-shadow: 0 4px 32px color-mix(in srgb, var(--accent-color), transparent 90%);
+      min-width: 270px;
+      gap: 8px;
+
+      .stats-rating-img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        background: color-mix(in srgb, var(--accent-color), transparent 85%);
+        border: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+      }
+
+      .rating-score {
+        .fs-5 {
+          color: var(--accent-color);
+        }
+
+        .stars {
+          color: color-mix(in srgb, var(--accent-color), #ffd700 70%);
+          font-size: 1.15rem;
+        }
+      }
+
+      .user-feedback {
+        color: color-mix(in srgb, var(--default-color), transparent 40%);
+        font-size: 0.95rem;
+        font-family: var(--default-font);
+      }
+    }
+  }
+
+  .stats-counters {
+    margin-top: 0.5rem;
+
+    .stats-counter-card {
+      background: var(--surface-color);
+      border-radius: 5px;
+      box-shadow: 0 2px 12px color-mix(in srgb, var(--accent-color), transparent 90%);
+      padding: 1.75rem 1rem 1.25rem 1rem;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: box-shadow 0.3s;
+
+      &:hover {
+        box-shadow: 0 4px 32px color-mix(in srgb, var(--accent-color), transparent 82%);
+      }
+
+      .counter-value {
+        color: var(--accent-color);
+        font-family: var(--heading-font);
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        display: flex;
+        align-items: flex-end;
+
+        .purecounter {
+          font-size: inherit;
+          color: inherit;
+        }
+      }
+
+      .label {
+        color: color-mix(in srgb, var(--default-color), transparent 35%);
+        font-size: 1rem;
+        font-family: var(--default-font);
+        font-weight: 500;
+        margin-top: 0.3rem;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .stats-hero .headline {
+      font-size: 1.7rem;
+    }
+
+    .stats-counters .stats-counter-card {
+      font-size: 0.97rem;
+      padding: 1.2rem 0.7rem 1rem 0.7rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .stats-hero {
+      flex-direction: column;
+
+      .headline {
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      .lead {
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .stats-rating {
+        margin-inline: auto;
+      }
+    }
+
+    .stats-counters {
+      .stats-counter-card {
+        padding: 1rem;
+        font-size: 0.93rem;
+      }
+    }
+  }
+
+  .bi-star-fill,
+  .bi-star-half {
+    color: #ffae00;
+    font-size: 1.18em;
+    vertical-align: -0.13em;
+    margin-right: 2px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

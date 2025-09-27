@@ -1,0 +1,145 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+.pricing {
+  .pricing-card {
+    height: 100%;
+    padding: 2rem;
+    background: var(--surface-color);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:hover {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    &.popular {
+      background: var(--accent-color);
+      color: var(--contrast-color);
+
+      h3,
+      h4 {
+        color: var(--contrast-color);
+      }
+
+      .price {
+
+        .currency,
+        .amount,
+        .period {
+          color: var(--contrast-color);
+        }
+      }
+
+      .features-list {
+        li {
+          color: var(--contrast-color);
+
+          i {
+            color: var(--contrast-color);
+          }
+        }
+      }
+
+      .btn-light {
+        background: var(--contrast-color);
+        color: var(--accent-color);
+
+        &:hover {
+          background: color-mix(in srgb, var(--contrast-color), transparent 10%);
+        }
+      }
+    }
+
+    .popular-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--contrast-color);
+      color: var(--accent-color);
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .price {
+      margin-bottom: 1.5rem;
+
+      .currency {
+        font-size: 1.5rem;
+        font-weight: 600;
+        vertical-align: top;
+        line-height: 1;
+      }
+
+      .amount {
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 1;
+      }
+
+      .period {
+        font-size: 1rem;
+        color: color-mix(in srgb, var(--default-color), transparent 40%);
+      }
+    }
+
+    .description {
+      margin-bottom: 2rem;
+      font-size: 0.975rem;
+    }
+
+    h4 {
+      font-size: 1.125rem;
+      margin-bottom: 1rem;
+    }
+
+    .features-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        i {
+          color: var(--accent-color);
+          margin-right: 0.75rem;
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-weight: 500;
+
+      &.btn-primary {
+        background: var(--accent-color);
+        border: none;
+        color: var(--contrast-color);
+
+        &:hover {
+          background: color-mix(in srgb, var(--accent-color), transparent 15%);
+        }
+      }
+    }
+  }
+}

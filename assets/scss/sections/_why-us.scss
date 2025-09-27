@@ -1,0 +1,43 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Why Us Section
+--------------------------------------------------------------*/
+.why-us {
+  .card-item {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--surface-color);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .card-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: color-mix(in srgb, var(--default-color), transparent 25%);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+  }
+
+  .image-wrapper {
+    img {
+      border-radius: 1rem;
+    }
+  }
+}
