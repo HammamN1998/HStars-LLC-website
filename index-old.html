@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index Old - eBusiness Bootstrap Template</title>
+  <title>Index - eBusiness Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="index-old-page">
+<body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -49,7 +49,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
+          <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -83,54 +83,165 @@
 
   <main class="main">
 
-    <!-- Hero 2 Section -->
-    <section id="hero-2" class="hero-2 section dark-background">
-
-      <div id="hero-2-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-        <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
-          <div class="carousel-container">
-            <h2>We are professional</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a href="#featured-services" class="btn-get-started">Get Started</a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+              <h2>Strategic Solutions for Business Growth</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Get a Free Consultation</a>
+                <a href="#services" class="btn btn-outline">Our Services</a>
+              </div>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>+</h3>
+                  <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>+</h3>
+                  <p>Clients Worldwide</p>
+                </div>
+                <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="1" class="purecounter"></span>%</h3>
+                  <p>Success Rate</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
-          <div class="carousel-container">
-            <h2>At vero eos et accusamus</h2>
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
-            <a href="#featured-services" class="btn-get-started">Get Started</a>
+          <div class="col-lg-6">
+            <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+              <img src="assets/img/about/about-8.webp" alt="Consulting Services" class="img-fluid">
+            </div>
           </div>
-        </div><!-- End Carousel Item -->
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
 
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-          <div class="carousel-container">
-            <h2>Temporibus autem quibusdam</h2>
-            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-            <a href="#featured-services" class="btn-get-started">Get Started</a>
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div data-aos="fade-up" data-aos-delay="100">
+
+        <div class="clients-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 6000,
+              "autoplay": {
+                "delay": 1,
+                "disableOnInteraction": false
+              },
+              "centeredSlides": true,
+              "slideToClickedSlide": true,
+              "slidesPerView": "auto",
+              "spaceBetween": 40,
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                },
+                "640": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                },
+                "992": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 30
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 40
+                }
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="assets/img/clients/clients-1.webp" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="assets/img/clients/clients-2.webp" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="assets/img/clients/clients-3.webp" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="assets/img/clients/clients-4.webp" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="assets/img/clients/clients-5.webp" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="assets/img/clients/clients-6.webp" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="assets/img/clients/clients-1.webp" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="assets/img/clients/clients-2.webp" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="assets/img/clients/clients-3.webp" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="assets/img/clients/clients-4.webp" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="assets/img/clients/clients-5.webp" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="assets/img/clients/clients-6.webp" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Client Item -->
+
           </div>
-        </div><!-- End Carousel Item -->
 
-        <a class="carousel-control-prev" href="#hero-2-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#hero-2-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
-        <ol class="carousel-indicators"></ol>
+        </div>
 
       </div>
 
-    </section><!-- /Hero 2 Section -->
+    </section><!-- /Clients Section -->
 
-    <!-- About 2 Section -->
-    <section id="about-2" class="about-2 section">
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -138,41 +249,145 @@
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-3">
+        <div class="row gy-4 align-items-center justify-content-between">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.jpg" alt="" class="img-fluid">
-          </div>
+          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <span class="about-meta">MORE ABOUT US</span>
+            <h2 class="about-title">Voluptas enim suscipit temporibus</h2>
+            <p class="about-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3">
-              <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li>
-                  <i class="bi bi-diagram-3"></i>
-                  <div>
-                    <h4>Ullamco laboris nisi ut aliquip consequat</h4>
-                    <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                  </div>
-                </li>
-              </ul>
+            <div class="row feature-list-wrapper">
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Lorem ipsum dolor sit amet</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Consectetur adipiscing elit</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Sed do eiusmod tempor</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Incididunt ut labore et</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Dolore magna aliqua</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Ut enim ad minim veniam</li>
+                </ul>
+              </div>
             </div>
 
+            <div class="info-wrapper">
+              <div class="row gy-4">
+                <div class="col-lg-5">
+                  <div class="profile d-flex align-items-center gap-3">
+                    <img src="assets/img/person/person-m-2.webp" alt="CEO Profile" class="profile-image">
+                    <div>
+                      <h4 class="profile-name">Mario Smith</h4>
+                      <p class="profile-position">CEO &amp; Founder</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="contact-info d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div>
+                      <p class="contact-label">Call us anytime</p>
+                      <p class="contact-number">+123 456-789</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                <img src="assets/img/about/about-5.webp" alt="Business Meeting" class="img-fluid main-image rounded-4">
+                <img src="assets/img/about/about-square-1.webp" alt="Team Discussion" class="img-fluid small-image rounded-4">
+              </div>
+              <div class="experience-badge floating">
+                <h3>15+ <span>Years</span></h3>
+                <p>Of experience in business service</p>
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
 
-    </section><!-- /About 2 Section -->
+    </section><!-- /About Section -->
 
-    <!-- Services 2 Section -->
-    <section id="services-2" class="services-2 section">
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="stats-hero row align-items-center mb-5">
+          <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
+            <h3 class="headline mb-3">Transforming Data Into Impactful Insights</h3>
+            <p class="lead">Nunc euismod, tortor nec facilisis egestas, ligula turpis cursus odio, a lobortis sapien ipsum et dolor. Morbi dignissim cursus massa non lobortis.</p>
+          </div>
+          <div class="col-lg-5 text-lg-end text-center" data-aos="zoom-in" data-aos-delay="300">
+            <div class="stats-rating d-inline-flex align-items-center py-3 px-4 shadow-sm">
+              <img src="assets/img/about/about-1.webp" class="img-fluid stats-rating-img me-3" alt="User Group" width="64" height="48">
+              <div>
+                <div class="rating-score d-flex align-items-center mb-1">
+                  <span class="fs-5 fw-semibold me-2">4.8/5</span>
+                  <span class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </span>
+                </div>
+                <div class="user-feedback small">Based on 70+ unique user reviews</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-counters row gy-4 justify-content-center">
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <article class="stats-counter-card">
+              <div class="counter-value mb-1">
+                <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1.5" class="purecounter"></span>K+
+              </div>
+              <small class="label">Active Clients</small>
+            </article>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <article class="stats-counter-card">
+              <div class="counter-value mb-1">
+                <span data-purecounter-start="0" data-purecounter-end="34" data-purecounter-duration="1.5" class="purecounter"></span>K+
+              </div>
+              <small class="label">Analytics Projects</small>
+            </article>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <article class="stats-counter-card">
+              <div class="counter-value mb-1">
+                <span data-purecounter-start="0" data-purecounter-end="97" data-purecounter-duration="1.5" class="purecounter"></span>%
+              </div>
+              <small class="label">Automation Success</small>
+            </article>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+            <article class="stats-counter-card">
+              <div class="counter-value mb-1">
+                <span data-purecounter-start="0" data-purecounter-end="99.96" data-purecounter-duration="1.5" class="purecounter"></span>%
+              </div>
+              <small class="label">Cloud Reliability</small>
+            </article>
+          </div>
+        </div><!-- End stats counters -->
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -180,84 +395,231 @@
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row g-5">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-palette"></i>
+              </span>
+              <h3>
+                <a href="service-details.html">
+                  Creative <span>branding</span>
+                </a>
+              </h3>
+              <p>
+                Suspendisse in ultricies ipsum. Nulla commodo sem ac tortor rhoncus, vel volutpat magna varius. Nam porta felis non convallis finibus.
+              </p>
+              <a href="service-details.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <i class="bi bi-activity icon"></i>
-              <div>
-                <h3>Nesciunt Mete</h3>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-gem"></i>
+              </span>
+              <h3>
+                <a href="service-details.html">
+                  Design <span>systems</span>
+                </a>
+              </h3>
+              <p>
+                Fusce aliquet, nibh ac facilisis viverra, nulla purus aliquet diam, quis consectetur risus dolor a diam. Vivamus convallis lacinia magna.
+              </p>
+              <a href="service-details.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <i class="bi bi-broadcast icon"></i>
-              <div>
-                <h3>Eosle Commodi</h3>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-megaphone"></i>
+              </span>
+              <h3>
+                <a href="service-details.html">
+                  Marketing <span>strategies</span>
+                </a>
+              </h3>
+              <p>
+                Aliquam erat volutpat. Integer at sapien at risus elementum ornare a sit amet odio. Mauris quis magna vel enim pretium maximus.
+              </p>
+              <a href="service-details.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <i class="bi bi-easel icon"></i>
-              <div>
-                <h3>Ledo Markt</h3>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-code-slash"></i>
+              </span>
+              <h3>
+                <a href="service-details.html">
+                  Digital <span>platforms</span>
+                </a>
+              </h3>
+              <p>
+                Sed in tortor eget lacus gravida dignissim eu sed leo. Etiam sed aliquet massa, id imperdiet purus. Curabitur nec ullamcorper lorem.
+              </p>
+              <a href="service-details.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <i class="bi bi-bounding-box-circles icon"></i>
-              <div>
-                <h3>Asperiores Commodi</h3>
-                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-graph-up"></i>
+              </span>
+              <h3>
+                <a href="service-details.html">
+                  Growth <span>acceleration</span>
+                </a>
+              </h3>
+              <p>
+                Pellentesque faucibus, augue at maximus ultricies, metus velit malesuada elit, vitae tristique lorem dui sed tellus. Integer sed tortor sed.
+              </p>
+              <a href="service-details.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <i class="bi bi-calendar4-week icon"></i>
-              <div>
-                <h3>Velit Doloremque.</h3>
-                <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <i class="bi bi-chat-square-text icon"></i>
-              <div>
-                <h3>Dolori Architecto</h3>
-                <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="service-details.html">
+                  Media <span>solutions</span>
+                </a>
+              </h3>
+              <p>
+                Morbi dapibus metus ac condimentum pellentesque. Curabitur eget dictum lacus. Cras et augue vitae ex dictum tincidunt quis quis tellus.
+              </p>
+              <a href="service-details.html" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
         </div>
 
       </div>
 
-    </section><!-- /Services 2 Section -->
+    </section><!-- /Services Section -->
 
-    <!-- Features 2 Section -->
-    <section id="features-2" class="features-2 section light-background">
+    <!-- Alt Services Section -->
+    <section id="alt-services" class="alt-services section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          <div class="col-lg-6 col-xl-3">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card-header">
+                <div class="icon-box">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h4>Consectetur adipiscing</h4>
+              </div>
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <div class="feature-image">
+                  <img src="assets/img/services/services-1.webp" alt="Security Services" class="img-fluid">
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn-explore">
+                  Explore Service
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- /Service Card -->
+
+          <div class="col-lg-6 col-xl-3">
+            <div class="service-card featured" data-aos="zoom-in" data-aos-delay="200">
+              <div class="card-header">
+                <div class="icon-box">
+                  <i class="bi bi-cpu"></i>
+                </div>
+                <h4>Sed do eiusmod</h4>
+              </div>
+              <div class="card-body">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                <div class="feature-image">
+                  <img src="assets/img/services/services-2.webp" alt="Technology Solutions" class="img-fluid">
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn-explore">
+                  Explore Service
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- /Service Card -->
+
+          <div class="col-lg-6 col-xl-3">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="card-header">
+                <div class="icon-box">
+                  <i class="bi bi-rocket-takeoff"></i>
+                </div>
+                <h4>Tempor incididunt</h4>
+              </div>
+              <div class="card-body">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="feature-image">
+                  <img src="assets/img/services/services-3.webp" alt="Innovation Services" class="img-fluid">
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn-explore">
+                  Explore Service
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- /Service Card -->
+
+          <div class="col-lg-6 col-xl-3">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+              <div class="card-header">
+                <div class="icon-box">
+                  <i class="bi bi-puzzle"></i>
+                </div>
+                <h4>Ut labore dolore</h4>
+              </div>
+              <div class="card-body">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                <div class="feature-image">
+                  <img src="assets/img/services/services-4.webp" alt="Strategic Planning" class="img-fluid">
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn-explore">
+                  Explore Service
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- /Service Card -->
+
+        </div>
+      </div>
+    </section><!-- /Alt Services Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -265,59 +627,197 @@
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 justify-content-between features-item">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/features/features-1.webp" class="img-fluid" alt="">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="features-intro">
+              <h2>Revolutionary Digital Solutions</h2>
+              <p>Transforming business operations through innovative technology and strategic implementation methodologies.</p>
+              <div class="highlights-grid">
+                <div class="highlight-item">
+                  <div class="highlight-number">99.9%</div>
+                  <div class="highlight-text">Uptime Guarantee</div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-number">24/7</div>
+                  <div class="highlight-text">Expert Support</div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-number">500+</div>
+                  <div class="highlight-text">Satisfied Clients</div>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="featured-image-container">
+              <img src="assets/img/features/features-3.webp" alt="Digital Solutions" class="img-fluid">
+              <div class="floating-badge">
+                <i class="bi bi-award"></i>
+                <span>Industry Leader</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h3>Corporis temporibus maiores provident</h3>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-              </p>
-              <a href="#" class="btn more-btn">Learn More</a>
+        <div class="features-grid">
+          <div class="row g-4">
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="feature-box text-center">
+                <div class="feature-icon-wrapper">
+                  <i class="bi bi-lightning-charge"></i>
+                </div>
+                <h4>Lightning Performance</h4>
+                <p>Experience ultra-fast processing speeds with our optimized infrastructure and cutting-edge technology stack.</p>
+                <div class="progress-indicator">
+                  <div class="progress-bar" style="width: 95%;"></div>
+                </div>
+                <span class="progress-label">95% Efficiency</span>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="feature-box text-center">
+                <div class="feature-icon-wrapper">
+                  <i class="bi bi-shield-shaded"></i>
+                </div>
+                <h4>Advanced Security</h4>
+                <p>Multi-layered security protocols ensure your data remains protected against modern cyber threats.</p>
+                <div class="progress-indicator">
+                  <div class="progress-bar" style="width: 100%;"></div>
+                </div>
+                <span class="progress-label">100% Secure</span>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+              <div class="feature-box text-center">
+                <div class="feature-icon-wrapper">
+                  <i class="bi bi-layers"></i>
+                </div>
+                <h4>Seamless Integration</h4>
+                <p>Connect all your existing systems effortlessly with our flexible and scalable integration platform.</p>
+                <div class="progress-indicator">
+                  <div class="progress-bar" style="width: 88%;"></div>
+                </div>
+                <span class="progress-label">88% Compatibility</span>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+              <div class="feature-box text-center">
+                <div class="feature-icon-wrapper">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <h4>Smart Analytics</h4>
+                <p>Gain valuable insights through sophisticated data analysis and real-time reporting capabilities.</p>
+                <div class="progress-indicator">
+                  <div class="progress-bar" style="width: 92%;"></div>
+                </div>
+                <span class="progress-label">92% Accuracy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="advanced-features-section" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+              <h3>Advanced Capabilities</h3>
+              <p>Discover powerful features designed to elevate your business operations to the next level of excellence.</p>
             </div>
           </div>
 
-        </div><!-- Features Item -->
-
-        <div class="row gy-4 justify-content-between features-item">
-
-          <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="content">
-              <h3>Neque ipsum omnis sapiente quod quia dicta</h3>
-              <p>
-                Quidem qui dolore incidunt aut. In assumenda harum id iusto lorena plasico mares
-              </p>
-              <ul>
-                <li><i class="bi bi-easel flex-shrink-0"></i> Et corporis ea eveniet ducimus.</li>
-                <li><i class="bi bi-patch-check flex-shrink-0"></i> Exercitationem dolorem sapiente.</li>
-                <li><i class="bi bi-brightness-high flex-shrink-0"></i> Veniam quia modi magnam.</li>
-              </ul>
-              <p></p>
-              <a href="#" class="btn more-btn">Learn More</a>
+          <div class="row g-4">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
+              <div class="advanced-feature-card">
+                <div class="feature-header">
+                  <div class="feature-number">01</div>
+                  <div class="feature-status-badge enterprise">Enterprise</div>
+                </div>
+                <div class="feature-content">
+                  <h5>Automated Workflow Engine</h5>
+                  <p>Streamline complex business processes with intelligent automation that adapts to your organizational needs.</p>
+                  <ul class="feature-benefits">
+                    <li><i class="bi bi-check-circle"></i> Process Optimization</li>
+                    <li><i class="bi bi-check-circle"></i> Error Reduction</li>
+                  </ul>
+                </div>
+                <div class="feature-icon-bg">
+                  <i class="bi bi-diagram-3"></i>
+                </div>
+              </div>
             </div>
 
-          </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+              <div class="advanced-feature-card">
+                <div class="feature-header">
+                  <div class="feature-number">02</div>
+                  <div class="feature-status-badge premium">Premium</div>
+                </div>
+                <div class="feature-content">
+                  <h5>Real-time Collaboration</h5>
+                  <p>Enable seamless teamwork with synchronized data sharing and instant communication across all platforms.</p>
+                  <ul class="feature-benefits">
+                    <li><i class="bi bi-check-circle"></i> Live Updates</li>
+                    <li><i class="bi bi-check-circle"></i> Team Sync</li>
+                  </ul>
+                </div>
+                <div class="feature-icon-bg">
+                  <i class="bi bi-people"></i>
+                </div>
+              </div>
+            </div>
 
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/features/features-2.webp" class="img-fluid" alt="">
-          </div>
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="500">
+              <div class="advanced-feature-card">
+                <div class="feature-header">
+                  <div class="feature-number">03</div>
+                  <div class="feature-status-badge standard">Standard</div>
+                </div>
+                <div class="feature-content">
+                  <h5>Predictive Intelligence</h5>
+                  <p>Leverage machine learning algorithms to forecast trends and make data-driven strategic decisions.</p>
+                  <ul class="feature-benefits">
+                    <li><i class="bi bi-check-circle"></i> Trend Analysis</li>
+                    <li><i class="bi bi-check-circle"></i> Risk Assessment</li>
+                  </ul>
+                </div>
+                <div class="feature-icon-bg">
+                  <i class="bi bi-cpu"></i>
+                </div>
+              </div>
+            </div>
 
-        </div><!-- Features Item -->
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="600">
+              <div class="advanced-feature-card">
+                <div class="feature-header">
+                  <div class="feature-number">04</div>
+                  <div class="feature-status-badge coming-soon">Coming Soon</div>
+                </div>
+                <div class="feature-content">
+                  <h5>Cloud Scalability</h5>
+                  <p>Dynamic resource allocation ensures optimal performance during peak usage while maintaining cost efficiency.</p>
+                  <ul class="feature-benefits">
+                    <li><i class="bi bi-check-circle"></i> Auto Scaling</li>
+                    <li><i class="bi bi-check-circle"></i> Cost Optimization</li>
+                  </ul>
+                </div>
+                <div class="feature-icon-bg">
+                  <i class="bi bi-cloud-arrow-up"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
 
-    </section><!-- /Features 2 Section -->
+    </section><!-- /Features Section -->
 
-    <!-- Why Us 2 Section -->
-    <section id="why-us-2" class="why-us-2 section">
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -325,42 +825,162 @@
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-7 mb-4 mb-lg-0">
+            <div class="row gy-4">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <span>01</span>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-item">
+                  <div class="card-number">01</div>
+                  <h3>Primus contactus</h3>
+                  <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. Morbi fermentum quam nec nunc varius bibendum.</p>
+                </div>
+              </div><!-- End Card Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-item">
+                  <div class="card-number">02</div>
+                  <h3>Quaestio investigatio</h3>
+                  <p>Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa.</p>
+                </div>
+              </div><!-- End Card Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-item">
+                  <div class="card-number">03</div>
+                  <h3>Consilium evolutio</h3>
+                  <p>Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue.</p>
+                </div>
+              </div><!-- End Card Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-item">
+                  <div class="card-number">04</div>
+                  <h3>Executio</h3>
+                  <p>Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.</p>
+                </div>
+              </div><!-- End Card Item -->
+
             </div>
-          </div><!-- Card Item -->
+          </div>
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <span>02</span>
-              <h4><a href="" class="stretched-link">Repellat Nihil</a></h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+          <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="300">
+            <div class="image-wrapper">
+              <img src="assets/img/about/about-portrait-3.webp" alt="" class="img-fluid rounded-4">
             </div>
-          </div><!-- Card Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <span>03</span>
-              <h4><a href="" class="stretched-link">Ad ad velit qui</a></h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-            </div>
-          </div><!-- Card Item -->
-
+          </div>
         </div>
 
       </div>
 
-    </section><!-- /Why Us 2 Section -->
+    </section><!-- /Why Us Section -->
 
-    <!-- Portfolio 2 Section -->
-    <section id="portfolio-2" class="portfolio-2 section">
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="cta-wrapper">
+          <div class="background-pattern">
+            <div class="wave"></div>
+            <div class="geometric-shape shape-1"></div>
+            <div class="geometric-shape shape-2"></div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+              <div class="image-section" data-aos="fade-left" data-aos-delay="200">
+                <div class="main-image-wrapper">
+                  <img src="assets/img/cta/cta-4.webp" alt="CTA Image" class="img-fluid main-img">
+                  <div class="overlay-circle circle-1"></div>
+                  <div class="overlay-circle circle-2"></div>
+                </div>
+
+                <div class="stats-card card-1" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="stat-icon">
+                    <i class="bi bi-graph-up-arrow"></i>
+                  </div>
+                  <div class="stat-content">
+                    <h6>95%</h6>
+                    <span>Success Rate</span>
+                  </div>
+                </div>
+
+                <div class="stats-card card-2" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="stat-icon">
+                    <i class="bi bi-trophy-fill"></i>
+                  </div>
+                  <div class="stat-content">
+                    <h6>50K+</h6>
+                    <span>Happy Clients</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 order-lg-1">
+              <div class="content-section" data-aos="fade-right" data-aos-delay="300">
+                <div class="label-badge" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-rocket-takeoff"></i>
+                  <span>Launch Today</span>
+                </div>
+
+                <h2 data-aos="fade-up" data-aos-delay="450">Ready to Take Your Business to the Next Level?</h2>
+                <p data-aos="fade-up" data-aos-delay="500">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas.</p>
+
+                <div class="features-grid" data-aos="fade-up" data-aos-delay="550">
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <span>24/7 Expert Support</span>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <span>Advanced Analytics</span>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <span>Seamless Integration</span>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <span>Custom Solutions</span>
+                  </div>
+                </div>
+
+                <div class="cta-actions" data-aos="fade-up" data-aos-delay="600">
+                  <a href="#" class="btn btn-cta-primary">Get Started Free</a>
+                  <div class="secondary-action">
+                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-cta-secondary glightbox">
+                      <i class="bi bi-play-circle"></i>
+                      Watch Demo
+                    </a>
+                    <span class="note">No credit card required</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -508,10 +1128,10 @@
 
       </div>
 
-    </section><!-- /Portfolio 2 Section -->
+    </section><!-- /Portfolio Section -->
 
-    <!-- Pricing 2 Section -->
-    <section id="pricing-2" class="pricing-2 section">
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -519,76 +1139,133 @@
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="row g-4 justify-content-center">
 
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free Plan</h3>
-              <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <a href="#" class="cta-btn">Start a free trial</a>
-              <p class="text-center small">No credit card required</p>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
+          <!-- Basic Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-card">
+              <h3>Basic Plan</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">9.9</span>
+                <span class="period">/ month</span>
+              </div>
+              <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
+
+              <h4>Featured Included:</h4>
+              <ul class="features-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Duis aute irure dolor
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Excepteur sint occaecat
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Nemo enim ipsam voluptatem
+                </li>
               </ul>
-            </div>
-          </div><!-- End Pricing Item -->
 
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <p class="popular">Popular</p>
-              <h3>Business Plan</h3>
-              <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <a href="#" class="cta-btn">Start a free trial</a>
-              <p class="text-center small">No credit card required</p>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                <li><i class="bi bi-check"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
-              </ul>
+              <a href="#" class="btn btn-primary">
+                Buy Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
-          </div><!-- End Pricing Item -->
+          </div>
 
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pricing-item">
-              <h3>Developer Plan</h3>
-              <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <a href="#" class="cta-btn">Start a free trial</a>
-              <p class="text-center small">No credit card required</p>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                <li><i class="bi bi-check"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                <li><i class="bi bi-check"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
+          <!-- Standard Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-card popular">
+              <div class="popular-badge">Most Popular</div>
+              <h3>Standard Plan</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">19.9</span>
+                <span class="period">/ month</span>
+              </div>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+
+              <h4>Featured Included:</h4>
+              <ul class="features-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Lorem ipsum dolor sit amet
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Consectetur adipiscing elit
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Sed do eiusmod tempor
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Ut labore et dolore magna
+                </li>
               </ul>
+
+              <a href="#" class="btn btn-light">
+                Buy Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
-          </div><!-- End Pricing Item -->
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-card">
+              <h3>Premium Plan</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">39.9</span>
+                <span class="period">/ month</span>
+              </div>
+              <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
+
+              <h4>Featured Included:</h4>
+              <ul class="features-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Temporibus autem quibusdam
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Saepe eveniet ut et voluptates
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Nam libero tempore soluta
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Cumque nihil impedit quo
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Maxime placeat facere possimus
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn-primary">
+                Buy Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Pricing 2 Section -->
+    </section><!-- /Pricing Section -->
 
-    <!-- Faq 2 Section -->
-    <section id="faq-2" class="faq-2 section light-background">
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
 
       <div class="container">
 
@@ -653,10 +1330,101 @@
 
       </div>
 
-    </section><!-- /Faq 2 Section -->
+    </section><!-- /Faq Section -->
 
-    <!-- Contact 2 Section -->
-    <section id="contact-2" class="contact-2 section">
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-card">
+              <div class="profile-image">
+                <img src="assets/img/person/person-f-3.webp" class="img-fluid" alt="" loading="lazy">
+                <div class="role-badge">Senior Developer</div>
+                <div class="social-icons">
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Olivia Martinez</h4>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+            </div><!-- End Team Card -->
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="team-card">
+              <div class="profile-image">
+                <img src="assets/img/person/person-m-9.webp" class="img-fluid" alt="" loading="lazy">
+                <div class="role-badge">Creative Director</div>
+                <div class="social-icons">
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>James Wilson</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pellentesque habitant morbi tristique.</p>
+              </div>
+            </div><!-- End Team Card -->
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-card">
+              <div class="profile-image">
+                <img src="assets/img/person/person-f-8.webp" class="img-fluid" alt="" loading="lazy">
+                <div class="role-badge">Project Manager</div>
+                <div class="social-icons">
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sophia Johnson</h4>
+                <p>Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+              </div>
+            </div><!-- End Team Card -->
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="team-card">
+              <div class="profile-image">
+                <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt="" loading="lazy">
+                <div class="role-badge">Business Analyst</div>
+                <div class="social-icons">
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Benjamin Davis</h4>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+              </div>
+            </div><!-- End Team Card -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -666,88 +1434,90 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h3>Contact Info</h3>
+              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
 
-          <div class="col-lg-6">
-
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="200">
+              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
+                </div>
+                <div class="content">
+                  <h4>Our Location</h4>
                   <p>A108 Adam Street</p>
                   <p>New York, NY 535022</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="300">
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
                   <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
+                </div>
+                <div class="content">
+                  <h4>Phone Number</h4>
                   <p>+1 5589 55488 55</p>
                   <p>+1 6678 254445 41</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="400">
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
                   <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
+                </div>
+                <div class="content">
+                  <h4>Email Address</h4>
                   <p>info@example.com</p>
                   <p>contact@example.com</p>
                 </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="500">
-                  <i class="bi bi-clock"></i>
-                  <h3>Open Hours</h3>
-                  <p>Monday - Friday</p>
-                  <p>9:00AM - 05:00PM</p>
-                </div>
-              </div><!-- End Info Item -->
-
+              </div>
             </div>
-
           </div>
 
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3>Get In Touch</h3>
+              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+
                 </div>
+              </form>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
+            </div>
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Contact 2 Section -->
+    </section><!-- /Contact Section -->
 
   </main>
 
