@@ -50,10 +50,16 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
+    
+    // Convert FormData → plain object
+    const data = Object.fromEntries(formData.entries());
+    
     fetch(action, {
       method: 'POST',
-      body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
+      headers: {
+        'Content-Type': 'application/json',  // tell server it's JSON
+      },
+      body: JSON.stringify(data)  // send JSON instead of FormData
     })
     .then(response => {
       if( response.ok ) {
