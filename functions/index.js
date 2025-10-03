@@ -30,16 +30,16 @@ exports.sendEmail = onRequest({ secrets: [GMAIL_USER, GMAIL_APP_PASSWORD] }, (re
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: user,
+        user: user, // your sender email address
         pass: pass
       }
     });
 
     const mailOptions = {
       from: GMAIL_USER,
-      to: request.body.email,
+      to: 'hammamjobs@gmail.com',  // your receiver email address
       subject: request.body.subject,
-      text: `From ${request.body.name}\n\n${request.body.message}`
+      text: `Email: ${request.body.email}\n\nName: ${request.body.name}\n\nMessage: ${request.body.message}`
     };
     
     transporter.sendMail(mailOptions, (error, info) => {
