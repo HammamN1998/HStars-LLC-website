@@ -20,10 +20,18 @@ exports.sendEmail = onRequest({ secrets: [GMAIL_USER, GMAIL_APP_PASSWORD] }, (re
   corsHandler(request, response, () => {
     logger.info("start sendEmail function", {structuredData: true});
 
-    // Feching request body parameters from the URL-encoded form submission
     if (request.method !== "POST") return response.status(405).send("Method Not Allowed");
-    
-    // Replace these with your email service credentials
+
+    // The site posts JSON; onRequest usually parses it, but fall back to manual parse for raw string bodies.
+    let body = request.body || {};
+    if (typeof body === "string") {
+      try {
+        body = JSON.parse(body);
+      } catch (e) {
+        return response.status(400).send("Invalid request body");
+      }
+    }
+
     const user = GMAIL_USER.value();
     const pass = GMAIL_APP_PASSWORD.value();
 
@@ -36,10 +44,10 @@ exports.sendEmail = onRequest({ secrets: [GMAIL_USER, GMAIL_APP_PASSWORD] }, (re
     });
 
     const mailOptions = {
-      from: GMAIL_USER,
+      from: user,
       to: 'hammamjobs@gmail.com',  // your receiver email address
-      subject: request.body.subject,
-      text: `Email: ${request.body.email}\n\nName: ${request.body.name}\n\nMessage: ${request.body.message}`
+      subject: body.subject,
+      text: `Email: ${body.email}\n\nName: ${body.name}\n\nMessage: ${body.message}`
     };
     
     transporter.sendMail(mailOptions, (error, info) => {
