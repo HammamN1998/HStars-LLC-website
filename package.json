@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "deploy": "firebase.cmd deploy"
+  },
   "dependencies": {
     "cors": "^2.8.5"
   }

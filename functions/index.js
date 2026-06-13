@@ -11,11 +11,13 @@ const corsHandler = cors({
   maxAge: 3600
 });
 
-const GMAIL_USER = defineSecret('GMAIL_USER');
-const GMAIL_APP_PASSWORD = defineSecret('GMAIL_APP_PASSWORD');
+// const MAIL_USER = defineSecret('GMAIL_USER');
+// const MAIL_APP_PASSWORD = defineSecret('GMAIL_APP_PASSWORD');
+const MAIL_USER = defineSecret('ZOHO_NOREPLY_MAIL_USER');
+const MAIL_APP_PASSWORD = defineSecret('ZOHO_NOREPLY_MAIL_APP_PASSWORD');
 
 
-exports.sendEmail = onRequest({ secrets: [GMAIL_USER, GMAIL_APP_PASSWORD] }, (request, response) => {
+exports.sendEmail = onRequest({ secrets: [MAIL_USER, MAIL_APP_PASSWORD] }, (request, response) => {
   
   corsHandler(request, response, () => {
     logger.info("start sendEmail function", {structuredData: true});
@@ -32,20 +34,29 @@ exports.sendEmail = onRequest({ secrets: [GMAIL_USER, GMAIL_APP_PASSWORD] }, (re
       }
     }
 
-    const user = GMAIL_USER.value();
-    const pass = GMAIL_APP_PASSWORD.value();
+    const user = MAIL_USER.value();
+    const pass = MAIL_APP_PASSWORD.value();
 
+    // const transporter = nodemailer.createTransport({
+    //   service: 'gmail',
+    //   auth: {
+    //     user: user, // your sender email address
+    //     pass: pass
+    //   }
+    // });
+
+    // 587 + STARTTLS => secure:false, requireTLS:true
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: user, // your sender email address
-        pass: pass
-      }
+      host: 'smtp.zoho.com',
+      port: 587,
+      secure: false,
+      requireTLS: true,
+      auth: { user: user, pass: pass },
     });
 
     const mailOptions = {
       from: user,
-      to: 'hammamjobs@gmail.com',  // your receiver email address
+      to: 'hammam.najem@clinicwell.app',  // your receiver email address
       subject: body.subject,
       text: `Email: ${body.email}\n\nName: ${body.name}\n\nMessage: ${body.message}`
     };
